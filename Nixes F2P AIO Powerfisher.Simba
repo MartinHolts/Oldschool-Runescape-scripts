@@ -1,6 +1,14 @@
 program new;
 {$define SMART} //If not using SMART, then comment this line out
 {$i AeroLib/AeroLib.Simba}
+
+const //Script config.
+  P_USERNAME = '';
+  P_PASSWORD = '';
+  Fish_Tool_To_Fish_With := 'Net';  // Net, Bait, Lure, BaitRod, Harpoon, Cage
+
+  PersonalRandomModifier := random(1,1000);
+  dropRandom := random(50,350);
 var
   AFKCounter             : Integer;
   playerIsFishing        : Boolean;
@@ -14,13 +22,6 @@ var
   dropStart             : TIntegerArray;
   numberOfSplits        : Integer;
   completedRandomLoop   : boolean;
-
-const
-  P_USERNAME = '';
-  P_PASSWORD = '';
-  Fish_Tool_To_Fish_With := 'Net';  // Net, Bait, Lure, BaitRod, Harpoon, Cage
-  PersonalRandomModifier := random(1,1000);
-  dropRandom := random(50,350);
 
 procedure declarePlayer();
 begin
@@ -100,10 +101,10 @@ begin
   cageSearchAreaBottom := [257,229,272,246];
   cageSearchAreaLeft := [219,168,234,182];
 
-  color_Net.create(2765113, 15, 0.34, 0.00);
-  color_Bait.create(6694, 15, 0.34, 0.00);
-  color_Harpoon.create(1140619, 15, 0.34, 0.00);
-  color_Cage.create(872564, 15, 0.34, 0.00);
+  color_Net.create(2765113, 15, 0.34, 0.50);
+  color_Bait.create(6694, 15, 0.34, 0.50);
+  color_Harpoon.create(1140619, 15, 0.34, 0.50);
+  color_Cage.create(872564, 15, 0.34, 0.50);
 
   Case Fish_Tool_To_Fish_With of
     'Net': begin
