@@ -12,8 +12,8 @@ var
   breaksTaken: Integer;
 
 const
-  P_USERNAME = 'mar.tinholts.meier@gmail.com';
-  P_PASSWORD = '775203762Aa';
+  P_USERNAME = '';
+  P_PASSWORD = '';
   P_PIN = '';
 
   LOG = 'magic'; {normal, oak, willow, maple, yew, magic}
