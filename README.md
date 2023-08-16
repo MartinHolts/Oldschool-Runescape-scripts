@@ -1,3 +1,3 @@
-# Oldschool-Runescape-scripts
+# OSRS-Automation-Scripts
 
-Botting scripts I made for MMORPG video game called Oldschool Runescape.
+This repository contains a collection of automation scripts I developed for the MMORPG video game, Old School RuneScape.
